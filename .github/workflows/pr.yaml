@@ -6,6 +6,11 @@ on:
         branches: 
             - main
 
+permissions:
+  security-events: write
+  actions: read
+  contents: read            
+
 jobs:
     build:
         runs-on: ubuntu-latest
